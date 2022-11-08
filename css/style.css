@@ -1,0 +1,33 @@
+.learn__more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 156px;
+    height: 39px;
+    background: #D9D9D9;
+    border-radius: 8px;
+}
+
+.learn__more:hover {
+    transform: translateX(2px);
+    background-color: #cccaca;
+
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+
+}
+
+.link {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+}
