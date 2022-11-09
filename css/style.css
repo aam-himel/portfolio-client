@@ -141,3 +141,20 @@ nav ul li.active {
     height: 400px;
     background-color: blue;
 }
+
+/* about */
+#about .nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: black !important;
+    font-weight: 500;
+    background-color: #D9D9D9;
+}
+
+#about .nav-pills .nav-link {
+    border-radius: 19px !important;
+}
+
+#about .nav-link {
+    color: #777777 !important;
+    ;
+}
