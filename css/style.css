@@ -31,3 +31,77 @@ a:hover {
     font-size: 16px;
     line-height: 28px;
 }
+
+.logo:hover {
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    padding: 6px;
+    border-bottom: 1px solid transparent;
+}
+
+nav ul li:hover {
+    border-bottom: 1px solid black;
+}
+
+nav ul li.active {
+    border-bottom: 1px solid black;
+}
+
+/* hero */
+.hero {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.view__work {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    background: #D9D9D9;
+    border-radius: 8px;
+    border: 1px solid transparent;
+}
+
+.view__more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    border-radius: 8px;
+
+    border: 1px solid black;
+}
+
+.social {
+    height: 40px;
+    width: 40px;
+    border-radius: 8px;
+}
+
+.social:hover {
+    background-color: #D9D9D9;
+    cursor: pointer;
+}
+
+.socials {
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+
+}
