@@ -1,17 +1,57 @@
 /* Reset */
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     overflow-y: scroll;
     font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 
-/* Works on Firefox */
-* {
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 0em;
+}
+
+.hero h3 {
+    font-size: 32px !important;
+
+}
+
+.hero .title {
+    font-size: 32px !important;
+}
+
+.top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 40px;
+    width: 40px;
+}
+
+.topshow {
+    display: block;
+}
+
+.tophide {
+    display: none;
+}
+
+/* * {
     scrollbar-width: thin;
     scrollbar-color: rgb(229, 200, 11) blue;
 }
 
-/* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
     width: 6px;
     height: 6px;
@@ -26,7 +66,7 @@ body {
 *::-webkit-scrollbar-thumb {
     background: rgb(229, 200, 11);
     border-radius: 20px;
-}
+} */
 
 
 /* Global */
@@ -309,6 +349,29 @@ footer {
 .content__width {
     width: 75%;
 }
+
+/* .top {
+    --offset: 50px;
+    position: sticky;
+    right: 0;
+    bottom: 20px;
+    margin-right: 10px;
+    margin-top: calc(100vh + var(--offset));
+
+    width: 45px;
+    aspect-ratio: 1;
+    background: #ff8b24;
+    border-radius: 10px;
+}
+
+.top:before {
+    content: "";
+    position: absolute;
+    inset: 30%;
+    transform: translateY(20%) rotate(-45deg);
+    border-top: 5px solid #fff;
+    border-right: 5px solid #fff;
+} */
 
 /* Respinsive */
 
