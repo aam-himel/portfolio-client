@@ -14,6 +14,7 @@ body {
 /* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
     width: 6px;
+    height: 6px;
 }
 
 *::-webkit-scrollbar-track {
@@ -26,6 +27,10 @@ body {
     background: rgb(229, 200, 11);
     border-radius: 20px;
 }
+
+
+/* Global */
+
 
 .learn__more {
     display: flex;
@@ -301,6 +306,10 @@ footer {
     width: 100%;
 }
 
+.content__width {
+    width: 75%;
+}
+
 /* Respinsive */
 
 @media (max-width: 767.98px) {
@@ -361,6 +370,22 @@ footer {
     .logo__text {
         font-size: 16px;
     }
+
+    .content__width {
+        width: 100%;
+    }
+
+    .work__table tr td {
+        padding: 8px;
+        font-size: 11px;
+        line-height: 22px;
+    }
+
+    .work__table tr th {
+        font-size: 11px;
+    }
+
+
 }
 
 @media (max-width: 575.98px) {
@@ -374,5 +399,14 @@ footer {
 
     .para {
         line-height: 1.4;
+    }
+
+    .next__prev {
+        width: 93% !important;
+        font-size: 12px !important;
+    }
+
+    .paper__link {
+        font-size: 14px !important;
     }
 }
