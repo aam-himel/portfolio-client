@@ -75,6 +75,10 @@ nav ul {
     list-style: none;
 }
 
+ul {
+    margin-top: 10px !important;
+}
+
 nav ul li {
     padding: 6px;
     border-bottom: 1px solid transparent;
@@ -295,4 +299,80 @@ footer {
 
 .personal__imgbox img {
     width: 100%;
+}
+
+/* Respinsive */
+
+@media (max-width: 767.98px) {
+    .title {
+        font-size: 1rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .para {
+        font-size: 12px !important;
+    }
+
+    .hero {
+
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+
+    .hero__content {
+        margin-top: 1rem;
+    }
+
+    .hero__img img {
+        width: 30% !important;
+    }
+
+    #hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .socials {
+        bottom: 0;
+        right: 35%;
+
+    }
+
+    .hero__links {
+        display: flex;
+        align-items: center;
+        justify-content: center !important;
+    }
+
+    .view__work,
+    .view__more {
+        width: 100px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .logo__text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .logo__text {
+        font-size: 12px;
+    }
+
+    nav ul li a {
+        font-size: 11px;
+    }
+
+    .para {
+        line-height: 1.4;
+    }
 }
