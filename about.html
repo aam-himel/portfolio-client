@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <title>K. Vikraman</title>
 </head>
@@ -17,11 +22,11 @@
         <div class="logo ">
             <a href="index.html" class="d-flex align-items-center">
                 <div class="me-2"><img src="./img/logo.svg" alt=""></div>
-                <span>K. Vikraman</span>
+                <span class="logo__text">K. Vikraman</span>
             </a>
         </div>
         <ul class="navbar d-flex ">
-            <li class="nav-item active">
+            <li class="nav-item ">
                 <a href="projects.html">Projects</a>
             </li>
             <li class="ms-4">
@@ -33,10 +38,14 @@
         </ul>
     </nav>
     <main>
-        <section class="container" id="about">
-            <h1>My Projects</h1>
-            <h5>Here is where you can view some of my most favorite projects that I have had the pleasure of working on.
-            </h5>
+        <section class="container my-5" id="about">
+            <div class="p-4 w-75">
+                <h1 class="page__title">My Experience and Achievements</h1>
+                <h5 class="page__subtitle">Here you’ll find details about my work experiences, awards I have received,
+                    and publications among other things I have accomplished
+                </h5>
+            </div>
+
             <div class="d-flex flex-column align-items-center justify-content-between">
                 <ul class="nav my-5 nav-pills mb-3" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
@@ -64,9 +73,9 @@
                     <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
                         aria-labelledby="pills-home-tab" tabindex="0">
                         <div class="container my-5">
-                            <div>
-                                <h2>Work Experience</h2>
-                                <table>
+                            <div class="mb-4">
+                                <h2 class="article__title p-3">Work Experience</h2>
+                                <table class="work__table">
                                     <tr>
                                         <th>Year </th>
                                         <th>Role </th>
@@ -79,11 +88,17 @@
                                         <td>Lorem ipsum dolor sit</td>
                                         <td>Lorem ipsum dolor sit</td>
                                     </tr>
+                                    <tr>
+                                        <td>Lorem ipsum dolor sit</td>
+                                        <td>Lorem ipsum dolor sit</td>
+                                        <td>Lorem ipsum dolor sit</td>
+                                        <td>Lorem ipsum dolor sit</td>
+                                    </tr>
                                 </table>
                             </div>
                             <div>
-                                <h2>Work Experience</h2>
-                                <table>
+                                <h2 class="article__title p-3">Research Experience</h2>
+                                <table class="work__table">
                                     <tr>
                                         <th>Year </th>
                                         <th>Role </th>
@@ -106,7 +121,8 @@
                         <div class="container">
                             <div class="row my-5">
                                 <div class="col-8 mx-auto mb-5">
-                                    <h2>"A deep neural network to identify foreshocks in real time" </h2>
+                                    <h2 class="article__title">"A deep neural network to identify foreshocks in real
+                                        time" </h2>
                                     <span>Print • 2021 • 5 min read</span>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -116,7 +132,8 @@
                                                 src="./img/arro_right.svg" alt=""></span></a>
                                 </div>
                                 <div class="col-8 mx-auto mb-5">
-                                    <h2>"A deep neural network to identify foreshocks in real time" </h2>
+                                    <h2 class="article__title">"A deep neural network to identify foreshocks in real
+                                        time" </h2>
                                     <span>Print • 2021 • 5 min read</span>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -126,7 +143,8 @@
                                                 src="./img/arro_right.svg" alt=""></span></a>
                                 </div>
                                 <div class="col-8 mx-auto mb-5">
-                                    <h2>"A deep neural network to identify foreshocks in real time" </h2>
+                                    <h2 class="article__title">"A deep neural network to identify foreshocks in real
+                                        time" </h2>
                                     <span>Print • 2021 • 5 min read</span>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -145,11 +163,19 @@
                             class="container w-75 px-5 my-5 d-flex flex-column align-items-center justify-content-center">
                             <div class="py-5 img__box">
                             </div>
-                            <div class="my-4">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores minus vitae
-                                    labore ullam similique voluptas laboriosam accusantium. Harum deleniti, in odio
-                                    veniam, explicabo atque dolorum culpa incidunt voluptas quibusdam nobis quo enim
-                                    numquam fuga nihil nesciunt repudiandae! Maxime, similique nesciunt.</p>
+                            <div class=" pt-5">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Hac habitasse platea dictumst quisque.
+                                    Tellus elementum sagittis vitae et leo duis ut diam quam. Placerat in egestas erat
+                                    imperdiet sed euismod nisi porta. Venenatis cras sed felis eget velit. Nibh ipsum
+                                    consequat nisl vel pretium lectus quam id leo. Elementum tempus egestas sed sed
+                                    risus pretium quam vulputate. Velit ut tortor pretium viverra suspendisse potenti
+                                    nullam ac tortor. Lectus arcu bibendum at varius vel. Pharetra magna ac placerat
+                                    vestibulum lectus. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum.
+
+
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -158,19 +184,21 @@
                         <div class="container">
                             <div class="row my-5">
                                 <div class="col-8 mx-auto mb-4">
-                                    <h2>Best Innovative solution - Microsoft Vivli Datathon</h2>
+                                    <h2 class="article__title">Best Innovative solution - Microsoft Vivli Datathon</h2>
                                     <span>2021</span>
-                                    <p>
+                                    <p class="mt-1">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
                                         nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                        Here’s a picture of me with it!
+
+                                        <a href="#" class="paper__link">Here’s a picture of me with it! <img
+                                                src="./img/more.svg" class="ps-2" alt=""></a>
                                     </p>
                                 </div>
                                 <div class="col-8 mx-auto mb-4">
-                                    <h2>Best Innovative solution - Microsoft Vivli Datathon</h2>
+                                    <h2 class="article__title">Best Innovative solution - Microsoft Vivli Datathon</h2>
                                     <span>2021</span>
-                                    <p>
+                                    <p class="mt-1">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
                                         nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -183,10 +211,34 @@
                 </div>
             </div>
         </section>
+        <footer>
+            <div class="d-flex align-items-center justify-content-center">
+                <div class="social d-flex align-items-center justify-content-center">
+                    <a href="mailto:vikramaniitr@gmail.com">
+                        <img src="./img/email.svg" alt="">
+
+                    </a>
+                </div>
+                <div class="social mx-3 d-flex align-items-center justify-content-center">
+                    <a href="https://www.linkedin.com/in/kvikraman">
+                        <img src="./img/linkedin.svg" alt="">
+                    </a>
+                </div>
+                <div class="social d-flex align-items-center justify-content-center">
+                    <a href="https://github.com/Vikramank">
+                        <img src="./img/github.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <span>ⓒ 2022 K. Vikraman</span>
+        </footer>
     </main>
+
+    <script src="./js/app.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
     </script>
+
 
 </body>
 
