@@ -19,28 +19,54 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="container d-flex align-items-center mt-3 justify-content-between" id="nav">
-        <div class="logo ">
-            <a href="index.html" class="d-flex align-items-center">
-                <div class="me-2"><img src="./img/logo.svg" alt=""></div>
-                <span class="logo__text"><b>K. Vikraman</b></span>
-            </a>
-        </div>
+    <div class="w-100 nav__full">
+        <nav class="container py-1 d-flex align-items-center justify-content-between" id="nav">
+            <div class="logo ">
+                <a href="index.html" class="d-flex align-items-center">
+                    <div class="me-2"><img src="./img/logo.svg" alt=""></div>
+                    <span class="logo__text"><b>K. Vikraman</b></span>
+                </a>
+            </div>
 
-        <ul class=" d-flex align-items-center">
-            <li class="nav-item " id="id1">
-                <a href="projects.html">Projects</a>
-            </li>
-            <li class="ms-1 ms-md-4" id="id3">
-                <a href="about.html">About</a>
-            </li>
-            <li class="ms-1 ms-md-4" id="id3">
-                <a href="personal.html">Personal</a>
-            </li>
-        </ul>
-    </nav>
+            <ul class=" d-flex align-items-center">
+                <li class="nav-item " id="id1">
+                    <a href="projects.html">Projects</a>
+                </li>
+                <li class="ms-1 ms-md-4" id="id3">
+                    <a href="about.html">About</a>
+                </li>
+                <li class="ms-1 ms-md-4" id="id3">
+                    <a href="personal.html">Personal</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
     <main>
         <section class="container my-5 pb-3" id="project__details">
+            <!-- <a href="projects.html " class="btnHover">
+               
+                <svg class="w-6 h-6 backBtn" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M11 19l-7-7 7-7m8 14l-7-7 7-7"></path>
+                </svg>
+
+            </a> -->
+            <a href="projects.html">
+                <div class="d-flex align-items-center justify-content-between backbtn">
+                    <svg class="w-6 h-6 backBtn" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M11 19l-7-7 7-7m8 14l-7-7 7-7"></path>
+                    </svg>
+                    <span>
+                        BACK
+                    </span>
+                </div>
+            </a>
+
             <div class="row">
                 <div class="col-md-6 pe-0 pe-md-5">
                     <h1 class="article__title">Earthquake prediction using deep learning</h1>
